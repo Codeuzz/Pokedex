@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="pokedex.css">
+
+  </head>
+  <body>
+    <h1>Pokédex</h1>
+    <div class="pokedex">
+      <label for="search-input">Search for Pokémon Name or ID:</label>
+      <input type="text" id="search-input" required></input>
+      <button id="search-button">Search</button>
+      <div class="pokemon-result">
+        <div class="infos">
+          <p> 
+          <span id="pokemon-name"></span>
+          <span id="pokemon-id"></span>
+          </p>
+          <p class="small"> 
+         <span id="weight"></span>
+         <span id="height"></span>
+          </p> 
+        </div>
+        <img id="sprite"/>
+        <div id="types"></div>
+      </div>
+
+      <div class="pokemon-stats">
+          <div class="top-table">Base</div>
+          <div class="top-table">Stats</div>
+          <div class="base">HP:</div>  
+          <div class="stats" id="hp"></div>
+          <div class="base">Attack:</div>
+          <div class="stats" id="attack">6</div>  
+          <div class="base">Defense:</div>
+          <div class="stats" id="defense">8</div>
+          <div class="base">Sp. Attack:</div>
+          <div class="stats" id="special-attack">10</div>  
+          <div class="base">Sp. Defense:</div>
+          <div class="stats" id="special-defense">12</div>
+          <div class="base">Speed:</div>  
+          <div class="stats" id="speed">14</div>
+      </div>
+
+
+    </div>
+
+	<script src="pokedex.js"></script>
+  </body>
+</html>
